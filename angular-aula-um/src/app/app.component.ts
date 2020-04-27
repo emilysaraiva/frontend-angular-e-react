@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   buttonTitle = 'Botão Dois';
+
+  funcaoDeChamada(codigo:number): void {
+    console.log('App::Component', codigo);
+  }
 }

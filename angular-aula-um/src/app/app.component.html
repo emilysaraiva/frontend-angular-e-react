@@ -1,13 +1,11 @@
 <app-header titulo="Aplicação"></app-header>
-
-<div>
-  
+<app-card>
   <app-titulo title="Olá mundo!"></app-titulo>
 
-  <app-button nome="Botão Um"></app-button>
+  <app-button nome="Botão Um" codigo="1" (clickButton)="funcaoDeChamada($event)">
+  </app-button>
 
-  <app-button [nome]="buttonTitle"></app-button>
+  <app-button [nome]="buttonTitle" codigo="2" (clickButton)="funcaoDeChamada($event)">></app-button>
 
-  <app-button [nome]="'Botão Três'"></app-button>
-
-</div>
+  <app-button [nome]="'Botão Três'" codigo="3" (clickButton)="funcaoDeChamada($event)">></app-button>
+</app-card>
